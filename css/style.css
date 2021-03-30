@@ -22,7 +22,10 @@ li {
 }
 
 /* Base + Font styles */
-/* -------------------- */
+body {
+  font-family: "Libre Franklin";
+}
+
 /* Mobile styles -- Starting point */
 /* -------------------- */
 /* Footer styles */
