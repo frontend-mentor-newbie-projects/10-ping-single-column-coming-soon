@@ -12,20 +12,38 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/d8d1809782.js" crossorigin="anonymous"></script>
   
   <!-- Misc -->
   <title>Frontend Mentor | Ping Coming Soon Page</title>
 
 </head>
 <body>
+  <img src="./images/logo.svg" alt="Logo">
 
-  We are launching soon!
+  <h1>We are launching soon!</h1>
 
-  Subscribe and get notified
+  <p>Subscribe and get notified</p>
 
-  Notify Me
+  <form action="">
+    <div class="form-control">
+      <input type="text" name="email-address" id="email-address" palceholder="Your email address..." aria-label="Your email address...">
+      <small>Error message</small>
+    </div>
 
-  &copy; Copyright Ping. All rights reserved.
+    <input id="submit" type="submit" value="Notify Me">
+  </form>
+
+  <!-- Social Icons -->
+  <div id="social-icons">
+    <i class="fab fa-facebook-f circle-icon"></i>
+    <i class="fab fa-twitter circle-icon"></i>
+    <i class="fab fa-instagram circle-icon"></i>
+  </div>
+
+  <small id="copyright">&copy; Copyright Ping. All rights reserved.</small>
 
   <!-- Footer -->
   <!-- <footer>
