@@ -33,7 +33,7 @@ Currently unavailable.
 ### Links
 
 - Frontend Mentor Solution
-- [Live Site](https://frontend-mentor-newbie-projects.github.io/10-ping-column-coming-soon/)
+- [Live Site](https://frontend-mentor-newbie-projects.github.io/10-ping-single-column-coming-soon/)
 
 ## Author
 
