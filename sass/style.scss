@@ -44,6 +44,173 @@ body {
     font-family: $font-stack;
 }
 
+.container header {
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: center;
+
+    margin-bottom: 88px;
+
+    img {
+        height: 32px;
+    }
+}
+
+.container main {
+    h1 {
+        color: $neutral-1;
+        font-size: 40px;
+        font-weight: 300;
+
+        text-align: center;
+
+        margin-bottom: 40px;
+    }
+
+    h1 span {
+        color: $neutral-2;
+        font-weight: 700;
+    }
+
+    p {
+        color: $neutral-2;
+        font-size: 1.5rem;
+        font-weight: 400;
+
+        text-align: center;
+
+        margin-bottom: 72px;
+    }
+
+    img {
+        width: 560px;
+
+        margin-bottom: 240px;
+    }
+}
+
+.container main {
+    div#form-container {
+        margin-bottom: 144px;
+
+        padding: 0 24px;
+    }
+
+    .form-control input {
+        border: 0.1rem solid $secondary-1;
+        border-radius: 40px;
+    
+        display: block;
+    
+        width: 100%;
+        height: 80px;
+        
+        font-family: inherit;
+        font-size: 1.2rem;
+        padding: 0 64px; // Padding within the <input> element
+    }
+
+    .form-control input::placeholder {
+        opacity: 0.9;
+    
+        color: $secondary-1;
+        font-weight: 300;
+    }  
+
+    .form-control input:focus,
+    .form-control input:hover,
+    .form-control input:active {
+        outline: 0;
+        border-color: $secondary-1;
+    }
+
+    .form-control small {
+        visibility: hidden;
+
+        display: block;
+
+        color: $secondary-2;
+
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 300;
+        
+        text-align: center;
+    }
+
+    .form-control.error {
+        input {
+            border-color: $secondary-2;
+        }
+
+        small {
+            visibility: visible;
+
+            margin-top: 0.2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    input#submit {
+        background-color: $primary-1;
+        color: white;
+
+        font-family: inherit;
+        font-size: 1.2rem; // TODO: I guessed this value too
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+
+        border: none;
+        border-radius: 40px;
+
+        width: 100%;
+        height: 80px;
+
+        box-shadow:
+        0  1px  1px  rgba(0,0,0,0.05), 
+        0  2px  2px  rgba(0,0,0,0.05), 
+        0  4px  4px  rgba(0,0,0,0.05),
+        0  8px  8px  rgba(0,0,0,0.05),
+        0  16px 16px rgba(0,0,0,0.05);
+    }
+}
+
+.container footer {
+    display: flex;
+
+    flex-flow: column nowrap;
+    align-items: center;
+
+    div#social-icons {
+        margin-bottom: 56px;
+
+        i {
+            color: $primary-1;
+            font-size: 24px;
+
+            margin: 0 8px;
+        }
+
+        .circle-icon { // TODO: Not too sure about the sizes of the icons
+            background: none;
+            width: 48px;
+            height: 48px;
+            border: 1px solid $primary-1;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 48px;
+            vertical-align: middle;
+        }
+
+    }
+
+    small {
+        color: $neutral-1;
+        font-size: 1.2rem; // TODO: This doesn't look good: 1.5rem
+    } 
+}
+
 // - Small mobile - 320px
 // - Medium mobile - 375px
 // - Large mobile - 425px
@@ -55,7 +222,20 @@ body {
 
 /* Mobile styles -- Starting point */
 // 12 col | 8 col | 4 col
-/* -------------------- */
+body {
+    display: flex;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 168px 56px 72px 56px;
+}
+
+.container {
+    max-width: 560px;
+}
 
 /* Footer styles */
 .attribution {

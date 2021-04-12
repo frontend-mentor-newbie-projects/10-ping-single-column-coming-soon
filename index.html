@@ -9,9 +9,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-large.css" media="screen and (min-width: 1200px)">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Scripts -->
   <script src="https://kit.fontawesome.com/d8d1809782.js" crossorigin="anonymous"></script>
@@ -21,29 +22,46 @@
 
 </head>
 <body>
-  <img src="./images/logo.svg" alt="Logo">
+  <!-- Container -->
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <img src="./images/logo.svg" alt="Logo">
+    </header>
+    
+    <!-- Main -->
+    <main>
+      <h1>We are launching <span>soon!</span></h1>
 
-  <h1>We are launching soon!</h1>
+      <p>Subscribe and get notified</p>
 
-  <p>Subscribe and get notified</p>
+      <!-- Form -->
+      <div id="form-container">
+        <form action="">
+          <div class="form-control">
+            <input type="text" name="email-address" id="email-address" placeholder="Your email address..." aria-label="Your email address...">
+            <small>Error message</small>
+          </div>
+    
+          <input id="submit" type="submit" value="Notify Me">
+        </form>
+      </div>
 
-  <form action="">
-    <div class="form-control">
-      <input type="text" name="email-address" id="email-address" palceholder="Your email address..." aria-label="Your email address...">
-      <small>Error message</small>
-    </div>
+      <img src="./images/illustration-dashboard.png" alt="Illustration">
+    </main>
 
-    <input id="submit" type="submit" value="Notify Me">
-  </form>
+    <!-- Footer -->
+    <footer>
+      <!-- Social Icons -->
+      <div id="social-icons">
+        <i class="fab fa-facebook-f circle-icon"></i>
+        <i class="fab fa-twitter circle-icon"></i>
+        <i class="fab fa-instagram circle-icon"></i>
+      </div>
 
-  <!-- Social Icons -->
-  <div id="social-icons">
-    <i class="fab fa-facebook-f circle-icon"></i>
-    <i class="fab fa-twitter circle-icon"></i>
-    <i class="fab fa-instagram circle-icon"></i>
+      <small id="copyright">&copy; Copyright Ping. All rights reserved.</small>
+    </footer>
   </div>
-
-  <small id="copyright">&copy; Copyright Ping. All rights reserved.</small>
 
   <!-- Footer -->
   <!-- <footer>

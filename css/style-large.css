@@ -1,2 +1,73 @@
 /* Desktop styles -- The width of the screen is at least 1200px */
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 88px;
+    padding-bottom: 48px;
+  }
+  .container {
+    max-width: 640px;
+  }
+  .container header {
+    margin-bottom: 56px;
+  }
+  .container header img {
+    height: 24px;
+  }
+  .container main h1 {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+  .container main p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  .container main img {
+    width: 640px;
+    margin-bottom: 72px;
+  }
+  .container main div#form-container {
+    margin-bottom: 96px;
+    padding: 0;
+  }
+  .container main div#form-container form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 0;
+    width: auto;
+  }
+  .container main .form-control input {
+    font-size: 1rem;
+    display: inline;
+    height: 56px;
+    width: 424px;
+    margin-right: 1rem;
+  }
+  .container main input#submit {
+    font-size: 1rem;
+    display: inline;
+    height: 56px;
+    width: 200px;
+  }
+  .container footer div#social-icons {
+    margin-bottom: 24px;
+  }
+  .container footer div#social-icons i {
+    font-size: 16px;
+  }
+  .container footer div#social-icons .circle-icon {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .container footer small {
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=style-large.css.map */

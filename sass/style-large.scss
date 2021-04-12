@@ -1,4 +1,102 @@
 /* Desktop styles -- The width of the screen is at least 1200px */
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
+    // Layout styles
+    body {
+        display: flex;
     
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    
+        margin: 0 auto;
+        padding-top: 88px;
+        padding-bottom: 48px;
+    }
+
+    .container {
+        max-width: 640px;
+    }
+
+    // Body + Font styles    
+    .container header {
+        margin-bottom: 56px;
+    
+        img {
+            height: 24px;
+        }
+    }
+
+    .container main {
+        h1 {
+            font-size: 48px;
+            margin-bottom: 24px; // TODO: 32px
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+
+            margin-bottom: 40px;
+        }
+
+        img {
+            width: 640px;
+    
+            margin-bottom: 72px;
+        }
+    }
+
+    .container main {
+        div#form-container {
+            margin-bottom: 96px;
+            padding: 0;
+
+            form {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                padding: 0;
+
+                width: auto;
+            }
+        }
+
+        .form-control input { 
+            font-size: 1rem;
+
+            display: inline;
+            height: 56px;
+            width: 424px;
+
+            margin-right: 1rem;
+        }
+
+        input#submit {
+            font-size: 1rem;
+
+            display: inline;
+            height: 56px;
+            width: 200px;
+        }
+    }
+
+    .container footer {
+        div#social-icons {
+            margin-bottom: 24px;
+    
+            i {
+                font-size: 16px;
+            }
+    
+            .circle-icon { // TODO: Not too sure about the sizes of the icons
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+            }
+        }
+
+        small {
+            font-size: 1rem; // TODO: This doesn't look good: 1.5rem
+        } 
+    }
 }
